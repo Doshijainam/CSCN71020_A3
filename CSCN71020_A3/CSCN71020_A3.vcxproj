@@ -145,6 +145,11 @@
   <ItemGroup>
     <ClInclude Include="Rock_Paper_Scissor_Definition.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTestDirectory\UnitTestDirectory.vcxproj">
+      <Project>{de51a500-ea69-4ef5-8978-1406edcf79de}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
