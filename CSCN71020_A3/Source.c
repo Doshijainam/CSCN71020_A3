@@ -16,19 +16,26 @@ char* Rock_Paper_Scissor(char p1[LENGTH], char p2[LENGTH])
     {
         strcpy_s(result, 10, "Draw");
     }
-    
-
+    else if (strcmp(p1, "rock") == 0 && strcmp(p2, "rock") == 0 || strcmp(p1, "paper") == 0 && strcmp(p2, "paper") == 0 || strcmp(p1, "scissor") == 0 && strcmp(p2, "scissor") == 0)
+    {
+        strcpy_s(result, 10, "Draw");
+    }
     else if (strcmp(p1, "Rock") == 0 && strcmp(p2, "Scissor") == 0 || strcmp(p1, "Paper") == 0 && strcmp(p2, "Rock") == 0 || strcmp(p1, "Scissor") == 0 && strcmp(p2, "Paper") == 0)
     {
         strcpy_s(result, 10, "Player1");
     }
-    
-
+    else if (strcmp(p1, "rock") == 0 && strcmp(p2, "scissor") == 0 || strcmp(p1, "paper") == 0 && strcmp(p2, "rock") == 0 || strcmp(p1, "scissor") == 0 && strcmp(p2, "paper") == 0)
+    {
+        strcpy_s(result, 10, "Player1");
+    }
     else if (strcmp(p1, "Rock") == 0 && strcmp(p2, "Paper") == 0 || strcmp(p1, "Paper") == 0 && strcmp(p2, "Scissor") == 0 || strcmp(p1, "Scissor") == 0 && strcmp(p2, "Rock") == 0)
     {
         strcpy_s(result, 10, "Player2");
     }
-   
+    else if (strcmp(p1, "rock") == 0 && strcmp(p2, "paper") == 0 || strcmp(p1, "paper") == 0 && strcmp(p2, "scissor") == 0 || strcmp(p1, "scissor") == 0 && strcmp(p2, "rock") == 0)
+    {
+        strcpy_s(result, 10, "Player2");
+    }
     else
     {
         strcpy_s(result, 10, "Invalid!");
